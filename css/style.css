@@ -21,6 +21,9 @@ header #menu li{
     padding: 2rem 1rem;
 }
 
+header #menu li:hover{
+    text-decoration: underline;
+}
 
 /* BANNER */
 .container-banner{
@@ -51,7 +54,7 @@ header #menu li{
     display: flex;
     justify-content: space-between;
     padding: 6rem 4.4rem 5.5rem 4.4rem;
-    margin-bottom: 9rem;
+    margin-bottom: 2rem;
 }
 
 .container-video .content{
@@ -61,15 +64,16 @@ header #menu li{
 }
 
 .container-video h1{
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: normal;
-    margin: 0 0 1rem 0;
-}
+    margin: 2rem 0 1rem 0;
+ }
 
 .container-video p{
     font-size: 1.7rem;
     font-weight: normal;
     text-align: justify; 
+    font-family: Open Sans;
 }
 
 .container-video iframe{
@@ -81,26 +85,207 @@ header #menu li{
 /* FOUNDER */
 .container-founder{
     display: flex;
-
     max-height: 800px;
+    justify-content: center;
+    margin-bottom: 6rem;
 }
 
+.container-founder .content{
+width: 40%;
+margin-left: 6rem;
+ }
+
+.container-founder .content h1{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-weight: normal;
+    }
+
+    .container-founder .content p{
+        font-family: Open sans;
+        font-size: 1.6rem;
+        text-align: justify;
+        margin-bottom: 1.5rem;
+        }
+
+  .container-founder .content h2{
+            margin-top: 5rem;
+            font-weight: normal;
+        }
+
+        .container-founder .content h3{
+            font-weight: lighter;
+        }
+
+.container-founder .image{
+    width:550px;
+    height: 800px;
+    background: url(../imgs/foto-nath-sunfit.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem;
+}
+
+
 /* SCHEDULE */
+.container-schedule{
+    background-color:rgb(219, 96, 38) ;
+    height: 900px;
+}
+
+.container-schedule h1{
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    padding: 3rem 0 5rem 0;
+}
+
+.container-schedule .arrow{
+    width:50px;
+    height: 50px;
+}
+
+.container-schedule .schedule{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-schedule .carrossel{
+    width: 800px; 
+    height: 500px;
+    background-color: aliceblue;
+    border-radius: 2rem;
+    margin: 0 3rem;
+}
+
+.container-schedule .activity h2{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    font-weight: normal;
+    margin-top: 2rem;
+}
 
 
 /* TICKETS */
+.container-ticket{
+    background-color: white;
+    height: 800px;
+    margin: 1rem 0 5rem 0;
+}
+
+.container-ticket h1{
+    padding: 3rem 0 2rem 0;
+    font-weight: normal;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.container-ticket .tickets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.container-ticket .ticket{
+    background-color: rgb(221, 219, 219);
+    width: 65%;
+    height: 11rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.container-ticket .ticket .price{
+    padding-left: 15rem;
+}
+
+.container-ticket .ticket a{
+    background-color: rgb(62, 157, 212);
+    color: white;
+    padding: 0.3rem 5rem; 
+    border-radius: 2.5rem;
+}
+
 
 
 /* PARTNERS */
 .container-partners{
+    height: 800px;
+    width: auto;
+}
+
+.container-partners .partners{
     display: flex;
+    justify-content: space-around;
+     }
+
+.container-partners .partners img{
+    width: 100%;
+    height: 200px;
 }
 
 /* BUSINESS */
+.container-business{
+    background-color: rgb(21, 98, 161);
+    height: 800px;
+    display: flex;
+    color:white;
 
+}
+
+.container-business .banner{
+    width:50%;
+    height: 100%;
+    background-color: beige;
+}
+
+.container-business .content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 7rem;
+}
+
+.container-business .content h1{
+    font-size: 4rem;
+    font-weight: normal;
+    margin: 3rem 0 1rem 0;
+}
+
+.container-business .content p{
+    font-family: Open Sans;
+    text-align: justify;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 1rem 0;
+}
+
+.container-business .content button{
+    background-color: rgb(240, 119, 6);
+    color: white;
+    font-family: Bebas Neue;
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    display: inline-block; 
+}
 
 /* FAQ */
-
+.container-faq{
+    height: 800px;
+    
+}
 
 /* FOOTER */
 #divisor{
@@ -115,6 +300,7 @@ footer{
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    margin-top: 3rem;
 }
 
 footer p{
