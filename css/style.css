@@ -1,4 +1,4 @@
-/* HEADER */
+/* HEADER 
 header{
     display: flex;
     justify-content: space-between;
@@ -24,6 +24,73 @@ header #menu li{
 header #menu li:hover{
     text-decoration: underline;
 }
+*/
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    padding: 0.5rem;
+    position: relative; /* Adiciona um contexto de empilhamento ao header */
+}
+
+header img {
+    width: 14%;
+    height: auto;
+}
+
+header #menu {
+    display: flex;
+}
+
+header #menu li {
+    padding: 2rem 1rem;
+    position: relative; /* Necessário para posicionar o submenu */
+}
+
+header #menu li:hover {
+    text-decoration: underline;
+}
+
+/* Submenu de idiomas escondido inicialmente */
+#language-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10; /* Garante que o submenu fique acima dos outros elementos */
+}
+
+#language-options li {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+#language-options li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Mostrar as opções de idiomas ao passar o mouse */
+#language:hover #language-options {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
 
 /* BANNER */
 .container-banner{
