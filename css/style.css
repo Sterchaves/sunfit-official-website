@@ -207,6 +207,7 @@ margin-left: 6rem;
 
 
 /* SCHEDULE */
+
 .container-schedule{
     background-color:rgb(219, 96, 38) ;
     height: 900px;
@@ -251,6 +252,7 @@ margin-left: 6rem;
     margin: 2rem 0 3rem 0;
      
 }
+
 
 
 /* TICKETS */
@@ -403,6 +405,8 @@ margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    border-bottom: 1px solid #0000004b;
+    margin-top: 1rem;
  
 }
 
@@ -411,6 +415,7 @@ margin: 0 auto;
     font-weight: normal;
     width: 100%;
     text-align: start;
+    margin-bottom: 1rem;
 }
 
  
@@ -432,8 +437,7 @@ margin: 0 auto;
 }
 
 .container-faq .category.ativo {
-    border-bottom: 1px solid #0000004b;
-    margin: 1rem 0;
+    padding: 0.2rem 0 1rem 0;
 }
 
 
@@ -446,16 +450,6 @@ margin: 0 auto;
     clip-path: polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%);
     margin-right: 10px;
 }
-*/
-
-/*
-.line-bottom{
-    border-bottom: 1px solid rgb(0, 0, 0);
-    width: 100%;
-    height: auto;
-    margin: 1rem 0 1.5rem 0;
-}
-
 */
 
 /* FOOTER */
