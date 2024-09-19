@@ -400,24 +400,45 @@ margin: 0 auto;
 
 .container-faq .category{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+ 
 }
 
-.line-bottom{
-    border-bottom: 1px solid rgb(0, 0, 0);
-    width: 100%;
-    height: auto;
-    margin: 1rem 0 1.5rem 0;
-}
-
-.container-faq .category h2{
+.container-faq .category .pergunta{
     font-size: 2.7rem;
     font-weight: normal;
     width: 100%;
     text-align: start;
 }
 
+ 
+.container-faq .category .resposta{
+    display: none;
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: 300;
+    }
+ 
+/* PERGUNTA ATIVA */
+.container-faq .category.ativo .resposta{
+    display: block;
+    font-family: Open sans;
+    font-size: 18px;
+    font-weight: normal;
+
+
+}
+
+.container-faq .category.ativo {
+    border-bottom: 1px solid #0000004b;
+    margin: 1rem 0;
+}
+
+
+
+/*
 .container-faq .star{
     width: 30px;
     height: 30px;
@@ -425,8 +446,17 @@ margin: 0 auto;
     clip-path: polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%);
     margin-right: 10px;
 }
+*/
 
+/*
+.line-bottom{
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    height: auto;
+    margin: 1rem 0 1.5rem 0;
+}
 
+*/
 
 /* FOOTER */
 #divisor{
