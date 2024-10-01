@@ -92,6 +92,18 @@ header #menu li:hover {
   }
 }
 
+@media (max-width: 400px) {
+  header {
+    font-size: 12px;
+    padding: 0.2rem;
+  }
+
+  header #menu li {
+    padding: 0.7rem 0.5rem;
+    position: relative; /* Necessário para posicionar o submenu */
+  }
+}
+
 /* BANNER */
 .container-banner {
   position: relative;
@@ -101,18 +113,7 @@ header #menu li:hover {
   display: block;
 }
 
-.container-banner button {
-  position: absolute;
-  background-color: rgb(219, 96, 38);
-  padding: 0.7rem 2rem;
-  color: white;
-  top: 75%;
-  left: 7%;
-  cursor: pointer;
-  font-family: Bebas Neue;
-  font-size: 2rem;
-  border-radius: 2rem;
-}
+ 
 
 /* VIDEO */
 .container-video {
@@ -196,7 +197,7 @@ header #menu li:hover {
 /* FOUNDER */
 .container-founder {
   display: flex;
-  max-height: 800px;
+  max-height: 90rem;
   justify-content: center;
   margin-bottom: 6rem;
   padding: 0 3rem;
@@ -297,9 +298,35 @@ header #menu li:hover {
   }
 
   .container-founder .image {
-    width: 18rem;
+    width: 30rem;
     height: 70rem;
   }
+}
+
+@media (max-width: 400px) {
+  .container-founder .image {
+    width: 22rem;
+    height: 70rem;
+  }
+
+  .container-founder .content h2 {
+    font-size: 30px;
+  }
+  
+  .container-founder .content h3 {
+    font-size: 23px;
+  }
+
+}
+
+@media (max-width: 380px) {
+ 
+  .container-founder .image {
+    width: 50%;
+    height: 60rem;
+  }
+
+
 }
 
 /* SLIDE SWIPER */
@@ -605,6 +632,26 @@ header #menu li:hover {
     border-radius: 2.5rem;
   }
 }
+
+@media (max-width: 420px) {
+  .container-ticket .ticket {
+    background-color: rgb(221, 219, 219);
+    width: 90%;
+    height: 11rem;
+    padding: 1rem;
+  }
+
+  .container-ticket .tickets {
+    font-size: 24px;
+  }
+  .container-ticket .ticket a {
+    background-color: rgb(62, 157, 212);
+    color: white;
+    padding: 0.3rem 2rem;
+    border-radius: 2.5rem;
+  }
+}
+
 
 /* PARTNERS */
 .container-partners {
