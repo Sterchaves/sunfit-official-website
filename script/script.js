@@ -24,9 +24,25 @@ var TrandingSlider = new Swiper('.tranding-slider', {
 // Tranding Product Slider-end
 
 
+// MENU BURGUER
+function toggleMenu() {
+  const nav = document.querySelector('nav');
+  nav.classList.toggle('active');
+}
+
+document.addEventListener('click', function(event) {
+  const nav = document.querySelector('nav');
+  const burger = document.getElementById('burger');
+  const header = document.querySelector('header');
+
+  // Verifica se o clique foi fora do header (e do menu)
+  if (!header.contains(event.target) && nav.classList.contains('active')) {
+    nav.classList.remove('active'); // Fecha o menu
+  }
+});
 
 
-
+// FAQ
 const itensPerguntasERespostas = document.querySelectorAll(".category");
 
 itensPerguntasERespostas.forEach(function(item) {
