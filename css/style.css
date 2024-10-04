@@ -23,7 +23,7 @@ header #menu li {
 }
 
 header #menu li a {
-  color: black;
+  color:var(--black);
 }
 
 header #menu li:hover {
@@ -35,7 +35,7 @@ header #menu li:hover {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: white;
+  background-color: var(--white);
   border: 1px solid #ccc;
   border-radius: 2.5rem;
   padding: 0;
@@ -51,18 +51,28 @@ header #menu li:hover {
 #language-options li {
   padding: 10px;
   text-align: center;
-  color: black;
+  color: var(--black);
 }
 
 #language-options li a {
-  color: black;
+  color: var(--black);
 }
 
-#language-options li:hover {
-  background-color: #f0f0f0;
-  border-radius: 2.5rem;
-  padding: 1rem;
+#language-options li:hover:first-child  {
+  background-color: var(--languagehover);
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  border: none;
 }
+
+#language-options li:hover:last-child  {
+  background-color: var(--languagehover);
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  border: none;
+}
+
+ 
 
 /* Mostrar as opções de idiomas ao passar o mouse */
 #language:hover #language-options {
@@ -99,10 +109,11 @@ header #menu li:hover {
     left: -100%;
     width: 200px;
     height: 100vh;
-    background-color: #f8f8f8;
+    background-color: var(--bg);
     display: block;
     transition: left 0.3s ease;
     z-index: 1000;
+    box-shadow: var(--box-shadow-navbar);
   }
 
   #menu {
@@ -128,7 +139,7 @@ header #menu li:hover {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: white;
+    background-color: var(--bg);
     border: 1px solid #cccccca1;
     border-radius: 2.5rem;
     padding: 0;
@@ -136,6 +147,18 @@ header #menu li:hover {
     list-style: none;
     width: 100px;
     height: auto;
+  }
+
+  #language-options li:hover:first-child  {
+    background-color: var(--languagehover);
+    border-radius: 2.5rem;
+    border: none;
+  }
+  
+  #language-options li:hover:last-child  {
+    background-color: var(--languagehover);
+    border-radius: 2.5rem;
+    border: none;
   }
 }
 
@@ -157,17 +180,13 @@ header #menu li:hover {
 }
 
 
-.container-banner img {
-  display: block;
-}
-
-
 /* VIDEO */
 .container-video {
   display: flex;
   align-items: start;
   justify-content: center;
   margin: 10rem 4rem;
+  color:var(--black);
 }
 
 .container-video .content {
@@ -273,6 +292,7 @@ header #menu li:hover {
   justify-content: center;
   margin-bottom: 6rem;
   padding: 0 3rem;
+  color:var(--black);
 }
 
 .container-founder .content {
@@ -311,6 +331,7 @@ header #menu li:hover {
   background-size: cover;
   background-position: center;
   border-radius: 2rem;
+  box-shadow: var(--box-shadow-image);
 }
 
 @media (max-width: 1130px) {
@@ -445,6 +466,7 @@ header #menu li:hover {
   padding: 0 1rem;
   margin: 0 auto;
   text-align: center;
+  
 }
 
 @media (max-width: 500px) {
@@ -455,19 +477,21 @@ header #menu li:hover {
 }
 
 .section-heading {
-  font-size: 5rem;
-  color: white;
-  padding: 2rem 0 1rem 0;
+  color: var(--white);
+  font-size: 6rem;
+  padding-top: 2rem;
   font-weight: normal;
 }
 .section-subheading {
-  color: white;
+  color: var(--white);
   font-weight: lighter;
+  font-size: 2rem;
 }
 
 #tranding {
   padding: 4rem 0;
-  background-color: darkorange;
+  /*background-color: darkorange;*/
+  background-color: var(--bgorange);
 }
 
 @media (max-width: 1440px) {
@@ -503,7 +527,7 @@ header #menu li:hover {
 /* NOME DAS ATIVIDADES */
 .swiper-slide.tranding-slide h2 {
   margin: 2rem 0;
-  color: white;
+  color: var(--white);
   font-weight: normal;
 }
 
@@ -542,7 +566,7 @@ header #menu li:hover {
 @media (max-width: 500px) {
   .swiper-slide.tranding-slide h2 {
     margin: 0.7rem 0;
-    color: white;
+    color: var(--white);
     font-weight: normal;
   }
 
@@ -622,7 +646,7 @@ header #menu li:hover {
 
 /* TICKETS */
 .container-ticket {
-  background-color: white;
+  background-color: var(--bg);
   height: 70rem;
   display: flex;
   flex-direction: column;
@@ -645,7 +669,7 @@ header #menu li:hover {
 }
 
 .container-ticket .ticket {
-  background-color: rgb(221, 219, 219);
+  background-color: var( --bgticket);
   width: 60%;
   height: 11rem;
   border-radius: 2rem;
@@ -661,8 +685,8 @@ header #menu li:hover {
 }
 
 .container-ticket .ticket a {
-  background-color: rgb(62, 157, 212);
-  color: white;
+  background-color: var(--bgtagprice);
+  color: var(--white);
   padding: 0.3rem 5rem;
   border-radius: 2.5rem;
 }
@@ -675,15 +699,12 @@ header #menu li:hover {
 
 @media (max-width: 625px) {
   .container-ticket .ticket {
-    background-color: rgb(221, 219, 219);
     width: 90%;
     height: 11rem;
     padding: 1rem;
   }
 
   .container-ticket .ticket a {
-    background-color: rgb(62, 157, 212);
-    color: white;
     padding: 0.3rem 3rem;
     border-radius: 2.5rem;
   }
@@ -691,7 +712,6 @@ header #menu li:hover {
 
 @media (max-width: 420px) {
   .container-ticket .ticket {
-    background-color: rgb(221, 219, 219);
     width: 90%;
     height: 11rem;
     padding: 1rem;
@@ -700,9 +720,8 @@ header #menu li:hover {
   .container-ticket .tickets {
     font-size: 24px;
   }
+  
   .container-ticket .ticket a {
-    background-color: rgb(62, 157, 212);
-    color: white;
     padding: 0.3rem 2rem;
     border-radius: 2.5rem;
   }
@@ -710,7 +729,6 @@ header #menu li:hover {
 
 /* PARTNERS */
 .container-partners {
-  /* height: 80rem;*/
   margin: 7rem 0;
 }
 
@@ -751,16 +769,16 @@ header #menu li:hover {
 
 /* BUSINESS */
 .container-business {
-  background-color: rgb(21, 98, 161);
+  background-color: var(--bgbluebusiness);
   height: 80rem;
   display: flex;
-  color: white;
+  color: var(--white);
 }
 
 .container-business .banner {
   width: 50%;
   height: auto;
-  background-color: beige;
+  background-color: var(--white);
   background-size: cover;
   background-image: url(../imgs/sunfit-must.jpg);
   background-position: center;
@@ -782,7 +800,7 @@ header #menu li:hover {
 }
 
 .container-business .content p {
-  font-family: Open Sans;
+  font-family: Open Sans, sans-serif;
   text-align: justify;
   font-size: 22px;
   font-weight: normal;
@@ -790,14 +808,18 @@ header #menu li:hover {
 }
 
 .container-business .content button {
-  background-color: rgb(240, 119, 6);
-  color: white;
-  font-family: Bebas Neue;
+  background-color: var(--bgorange);
+  color: var(--white);
+  font-family: Bebas Neue, sans-serif;
   padding: 0.5rem 4rem;
   margin-top: 4rem;
   font-size: 30px;
   border-radius: 2rem;
   align-self: center;
+}
+
+.container-business .content button a{
+  color:var(--white);
   cursor: pointer;
 }
 
@@ -842,7 +864,7 @@ header #menu li:hover {
   }
 
   .container-business .content p {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     text-align: justify;
     font-size: 18px;
     font-weight: normal;
@@ -850,9 +872,6 @@ header #menu li:hover {
   }
 
   .container-business .content button {
-    background-color: rgb(240, 119, 6);
-    color: white;
-    font-family: Bebas Neue;
     padding: 0.5rem 4rem;
     margin: 4rem 0;
     font-size: 30px;
