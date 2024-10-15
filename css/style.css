@@ -172,12 +172,19 @@ header #menu li:hover {
 
 .container-banner {
   position: relative;
-  background: url(../imgs/main-banner-pt.svg) no-repeat center center;
+  background: url(../imgs/main-banner-maior.svg) no-repeat center center;
   background-size: cover;
   width: auto;
-  height: 95vh;
+  height: 90vh;
 
 }
+
+@media (max-width: 880px) {
+  .container-banner{
+    background: url(../imgs/main-banner.svg) no-repeat center center;
+  }
+}
+
 
 
 /* VIDEO */
