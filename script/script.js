@@ -1,3 +1,4 @@
+
 // MAIN SLIDE
 let list = document.querySelector('.slider .list');
 let items = document.querySelectorAll('.slider .list .item');
